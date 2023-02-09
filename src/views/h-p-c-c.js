@@ -19,6 +19,8 @@ import { Bar } from 'react-chartjs-2';
 
 import zoomPlugin from 'chartjs-plugin-zoom';
 
+import { connect } from '@planetscale/database'
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -28,6 +30,19 @@ ChartJS.register(
   Legend,
   zoomPlugin
 );
+
+//Get creds from .env file
+//require('dotenv').config()
+const config = {
+  host: 'aws.connect.psdb.cloud',
+  username: process.env.REACT_APP_pscale_username,
+  password: process.env.REACT_APP_pscale_password,
+}
+const conn = await connect(config)
+
+const results = await conn.execute('SELECT * FROM hpcc')
+
+const data = results.rows
 
 export const options = {
   responsive: true,
@@ -56,14 +71,17 @@ export const options = {
   },
 };
 
-const labels = ['config#1', 'config#2', 'config#3', 'config#4', 'config#5'];
+// Add string "config#" in front of each number in the array
+const labels = data.map((item) => {
+  return "config#" + item.config;
+});
 
 export const HPLdata = {
   labels,
   datasets: [
     {
       label: 'G-HPL (Terra Flops per second)',
-      data: [2.2338, 1.9867, 3.4567, 4.3461, 2.9871],
+      data: data.map((row) => row.G_HPL),
       backgroundColor: 'rgba(173, 216, 230)',
     },
   ],
@@ -74,7 +92,84 @@ export const PTRANSdata = {
   datasets: [
     {
       label: 'G-PTRANS (Terra Bytes per second)',
-      data: [0.0017, 0.0015, 0.0013, 0.0019, 0.0016],
+      data: data.map((row) => row.G_PTRANS),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const RANDOMACCESSdata = {
+  labels,
+  datasets: [
+    {
+      label: 'G-RANDOMAccess (Giga Updates per second)',
+      data: data.map((row) => row.G_RandomAccess),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const FFTdata = {
+  labels,
+  datasets: [
+    {
+      label: 'G-FFT (Terra Flops per second)',
+      data: data.map((row) => row.G_FFT),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const SYSdata = {
+  labels,
+  datasets: [
+    {
+      label: 'EP-STREAM Sys (Terra Bytes per second)',
+      data: data.map((row) => row.EP_STREAM_sys),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const TRIADdata = {
+  labels,
+  datasets: [
+    {
+      label: 'EP-STREAM Triad (Giga Bytes per second)',
+      data: data.map((row) => row.EP_STREAM_Triad),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const DGEMMdata = {
+  labels,
+  datasets: [
+    {
+      label: 'EP-DGEMM (Giga Flops per second)',
+      data: data.map((row) => row.EP_DGEMM),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const BANDWIDTHdata = {
+  labels,
+  datasets: [
+    {
+      label: 'RandomRing Bandwidth (Giga Bytes per second)',
+      data: data.map((row) => row.RandomRing_Bandwidth),
+      backgroundColor: 'rgba(173, 216, 230)',
+    },
+  ],
+};
+
+export const LATENCYdata = {
+  labels,
+  datasets: [
+    {
+      label: 'RandomRingLatency (micro-seconds)',
+      data: data.map((row) => row.RandomRing_Latency),
       backgroundColor: 'rgba(173, 216, 230)',
     },
   ],
@@ -93,6 +188,27 @@ const HPCC = (props) => {
       </div>
       <div className="benchmarks-blog-posts">
         <Bar options={options} data={PTRANSdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={RANDOMACCESSdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={FFTdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={SYSdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={TRIADdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={DGEMMdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={BANDWIDTHdata} />
+      </div>
+      <div className="benchmarks-blog-posts">
+        <Bar options={options} data={LATENCYdata} />
       </div>
       <FooterGray></FooterGray>
     </div>
