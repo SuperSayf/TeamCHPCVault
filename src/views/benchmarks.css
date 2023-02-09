@@ -12,17 +12,127 @@
   height: 781px;
   display: flex;
   max-width: 1320px;
-  align-items: flex-start;
+  align-items: center;
   padding-top: var(--dl-space-space-sixunits);
   padding-left: var(--dl-space-space-doubleunit);
   padding-right: var(--dl-space-space-doubleunit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-sixunits);
+  justify-content: center;
+}
+.benchmarks-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.benchmarks-navlink {
+  display: contents;
+}
+.benchmarks-component1 {
+  text-decoration: none;
 }
 .benchmarks-text {
-  color: var(--dl-color-secondary-500);
-  margin-left: var(--dl-space-space-unit);
-  margin-right: var(--dl-space-space-unit);
+  align-self: center;
+  margin-left: 10px;
+}
+.benchmarks-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.benchmarks-navlink1 {
+  display: contents;
+}
+.benchmarks-component2 {
+  text-decoration: none;
+}
+.benchmarks-text1 {
+  align-self: center;
+  margin-left: 10px;
+}
+.benchmarks-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.benchmarks-navlink2 {
+  display: contents;
+}
+.benchmarks-component3 {
+  text-decoration: none;
+}
+.benchmarks-text2 {
+  align-self: center;
+  margin-left: 10px;
+}
+.benchmarks-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.benchmarks-navlink3 {
+  display: contents;
+}
+.benchmarks-component4 {
+  text-decoration: none;
+}
+.benchmarks-text3 {
+  align-self: center;
+  margin-left: 10px;
+}
+.benchmarks-container5 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.benchmarks-navlink4 {
+  display: contents;
+}
+.benchmarks-component5 {
+  text-decoration: none;
+}
+.benchmarks-text4 {
+  align-self: center;
+  margin-left: 10px;
+}
+.benchmarks-container6 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.benchmarks-text5 {
+  align-self: center;
+  margin-left: 10px;
 }
 @media(max-width: 767px) {
   .benchmarks-blog-posts {

@@ -3,7 +3,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
-import SecondaryButton from '../components/secondary-button'
 import FooterGray from '../components/footer-gray'
 import './home.css'
 
@@ -21,17 +20,8 @@ const Home = (props) => {
             <h1 className="home-text HeadingOne">Welcome to</h1>
             <h1 className="home-text1 HeadingOne">Team CHPC&apos;s vault</h1>
             <span className="home-text2">
-              This website is used to analyze our benchmark results and their
-              various configurations
+              This website is used to analyze our benchmark results
             </span>
-            <div className="home-container2">
-              <div className="home-container3">
-                <SecondaryButton
-                  rootClassName="secondary-button-root-class-name"
-                  button="Contact Us"
-                ></SecondaryButton>
-              </div>
-            </div>
           </div>
         </div>
       </div>

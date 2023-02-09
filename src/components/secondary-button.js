@@ -15,13 +15,13 @@ const SecondaryButton = (props) => {
 }
 
 SecondaryButton.defaultProps = {
-  button: 'Button',
   rootClassName: '',
+  button: 'Button',
 }
 
 SecondaryButton.propTypes = {
-  button: PropTypes.string,
   rootClassName: PropTypes.string,
+  button: PropTypes.string,
 }
 
 export default SecondaryButton

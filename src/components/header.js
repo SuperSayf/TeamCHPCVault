@@ -32,8 +32,8 @@ const Header = (props) => {
             <div className="header-container2">
               <Link to="/live-preview" className="header-navlink4">
                 <PrimaryBlueButton
-                  rootClassName="primary-blue-button-root-class-name"
                   button="Live Preview"
+                  rootClassName="primary-blue-button-root-class-name"
                   className="header-component"
                 ></PrimaryBlueButton>
               </Link>
