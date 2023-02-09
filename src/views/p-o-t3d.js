@@ -10,8 +10,8 @@ const POT3D = (props) => {
   return (
     <div className="p-o-t3d-container">
       <Helmet>
-        <title>POT3D - Soft UI Pro</title>
-        <meta property="og:title" content="POT3D - Soft UI Pro" />
+        <title>POT3D</title>
+        <meta property="og:title" content="POT3D" />
       </Helmet>
       <HeaderBenchmarks rootClassName="header-benchmarks-root-class-name5"></HeaderBenchmarks>
       <div className="p-o-t3d-blog-posts">

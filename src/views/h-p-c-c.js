@@ -35,8 +35,10 @@ ChartJS.register(
 //require('dotenv').config()
 const config = {
   host: 'aws.connect.psdb.cloud',
-  username: process.env.REACT_APP_pscale_username,
-  password: process.env.REACT_APP_pscale_password,
+  // username: process.env.REACT_APP_pscale_username,
+  // password: process.env.REACT_APP_pscale_password,
+  username: '24hl95alg9a2m4owcvga',
+  password: 'pscale_pw_g6KUT7XX6Dwvx4G6h9NeJXRXk1DJKcNeaxYcqtern7F',
 }
 const conn = await connect(config)
 
@@ -179,8 +181,8 @@ const HPCC = (props) => {
   return (
     <div className="h-p-c-c-container">
       <Helmet>
-        <title>HPCC - Soft UI Pro</title>
-        <meta property="og:title" content="HPCC - Soft UI Pro" />
+        <title>HPCC</title>
+        <meta property="og:title" content="HPCC" />
       </Helmet>
       <HeaderBenchmarks rootClassName="header-benchmarks-root-class-name2"></HeaderBenchmarks>
       <div className="benchmarks-blog-posts">

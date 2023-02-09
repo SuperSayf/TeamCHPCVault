@@ -52,7 +52,7 @@ const Header = (props) => {
       <div data-role="MobileMenu" className="header-mobile-menu">
         <div className="header-top">
           <Link to="/" className="header-navlink5 Large">
-            Soft UI Design System
+            Team CHPC Dashboard
           </Link>
           <div data-role="CloseMobileMenu" className="header-close-menu">
             <svg viewBox="0 0 1024 1024" className="header-icon2">
@@ -69,15 +69,14 @@ const Header = (props) => {
               Home
             </Link>
             <Link to="/benchmarks" className="header-navlink7 Large">
-              Profile
+              Benchmarks
             </Link>
             <Link to="/settings" className="header-navlink8 Large">
-              Coming Soon
+              Settings
             </Link>
           </div>
         </div>
         <div className="header-bot">
-          <PrimaryPinkButton button="buy now" className=""></PrimaryPinkButton>
         </div>
       </div>
     </div>

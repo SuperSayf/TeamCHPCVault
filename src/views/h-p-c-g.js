@@ -10,8 +10,8 @@ const HPCG = (props) => {
   return (
     <div className="h-p-c-g-container">
       <Helmet>
-        <title>HPCG - Soft UI Pro</title>
-        <meta property="og:title" content="HPCG - Soft UI Pro" />
+        <title>HPCG</title>
+        <meta property="og:title" content="HPCG" />
       </Helmet>
       <HeaderBenchmarks rootClassName="header-benchmarks-root-class-name3"></HeaderBenchmarks>
       <div className="h-p-c-g-blog-posts">

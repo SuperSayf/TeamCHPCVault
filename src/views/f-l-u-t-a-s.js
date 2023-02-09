@@ -10,8 +10,8 @@ const FLUTAS = (props) => {
   return (
     <div className="f-l-u-t-a-s-container">
       <Helmet>
-        <title>FLUTAS - Soft UI Pro</title>
-        <meta property="og:title" content="FLUTAS - Soft UI Pro" />
+        <title>FLUTAS</title>
+        <meta property="og:title" content="FLUTAS" />
       </Helmet>
       <HeaderBenchmarks rootClassName="header-benchmarks-root-class-name6"></HeaderBenchmarks>
       <div className="f-l-u-t-a-s-blog-posts">

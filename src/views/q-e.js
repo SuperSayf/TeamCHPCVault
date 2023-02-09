@@ -10,8 +10,8 @@ const QE = (props) => {
   return (
     <div className="q-e-container">
       <Helmet>
-        <title>QE - Soft UI Pro</title>
-        <meta property="og:title" content="QE - Soft UI Pro" />
+        <title>QE</title>
+        <meta property="og:title" content="QE" />
       </Helmet>
       <HeaderBenchmarks rootClassName="header-benchmarks-root-class-name4"></HeaderBenchmarks>
       <div className="q-e-blog-posts">

@@ -10,8 +10,8 @@ const HPL = (props) => {
   return (
     <div className="h-p-l-container">
       <Helmet>
-        <title>HPL - Soft UI Pro</title>
-        <meta property="og:title" content="HPL - Soft UI Pro" />
+        <title>HPL</title>
+        <meta property="og:title" content="HPL" />
       </Helmet>
       <HeaderBenchmarks rootClassName="header-benchmarks-root-class-name1"></HeaderBenchmarks>
       <div className="h-p-l-blog-posts">

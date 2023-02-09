@@ -10,8 +10,8 @@ const LivePreview = (props) => {
   return (
     <div className="live-preview-container">
       <Helmet>
-        <title>LivePreview - Soft UI Pro</title>
-        <meta property="og:title" content="LivePreview - Soft UI Pro" />
+        <title>LivePreview</title>
+        <meta property="og:title" content="LivePreview" />
       </Helmet>
       <Header></Header>
       <div className="live-preview-container1">

@@ -12,8 +12,8 @@ const Benchmarks = (props) => {
   return (
     <div className="benchmarks-container">
       <Helmet>
-        <title>Benchmarks - Soft UI Pro</title>
-        <meta property="og:title" content="Benchmarks - Soft UI Pro" />
+        <title>Benchmarks</title>
+        <meta property="og:title" content="Benchmarks" />
       </Helmet>
       <Header rootClassName="header-root-class-name1"></Header>
       <div className="benchmarks-blog-posts">
