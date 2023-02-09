@@ -73,7 +73,7 @@ const HeaderBenchmarks = (props) => {
       <div data-role="MobileMenu" className="header-benchmarks-mobile-menu">
         <div className="header-benchmarks-top">
           <Link to="/" className="header-benchmarks-navlink08 Large">
-            Soft UI Design System
+            Team CHPC Dashboard
           </Link>
           <div
             data-role="CloseMobileMenu"
@@ -96,15 +96,14 @@ const HeaderBenchmarks = (props) => {
               to="/benchmarks"
               className="header-benchmarks-navlink10 Large"
             >
-              Profile
+              Benchmarks
             </Link>
             <Link to="/settings" className="header-benchmarks-navlink11 Large">
-              Coming Soon
+               Settings
             </Link>
           </div>
         </div>
         <div className="header-benchmarks-bot">
-          <PrimaryPinkButton button="buy now" className=""></PrimaryPinkButton>
         </div>
       </div>
     </div>
