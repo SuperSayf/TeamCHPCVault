@@ -8,6 +8,16 @@ import OutlineBlueButton from '../components/outline-blue-button'
 import FooterGray from '../components/footer-gray'
 import './benchmarks.css'
 
+export function getConfig() {
+  return {
+    host: 'aws.connect.psdb.cloud',
+    // username: process.env.REACT_APP_pscale_username,
+    // password: process.env.REACT_APP_pscale_password,
+    username: '24hl95alg9a2m4owcvga',
+    password: 'pscale_pw_g6KUT7XX6Dwvx4G6h9NeJXRXk1DJKcNeaxYcqtern7F',
+  }
+}
+
 const Benchmarks = (props) => {
   return (
     <div className="benchmarks-container">
